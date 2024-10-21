@@ -1,0 +1,71 @@
+/* Fonts */
+@font-face {
+    font-family: 'Georgia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Regular'), url('fonts/georgia.woff') format('woff');
+}
+
+@font-face {
+        font-family: 'Georgia Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Georgia Bold'), url('fonts/georgiab.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arial Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Arial Regular'), url('fonts/ARIAL.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Arial Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Arial Italic'), url('fonts/ARIALI.woff') format('woff');
+}
+
+/* Custom properties */
+:root {
+    /* Font variables*/
+    --ff-primary: 'Georgia Regular', serif;
+    --ff-primary-bold: 'Georgia Bold', serif;
+    --ff-secondary: 'Arial Regular', sans-serif;
+    --ff-secondary-italic: 'Arial Italic', sans-serif;
+
+    /*Colour variables*/
+    --clr-light-s: hsl(0, 0, 90%);
+    --clr-light-l: hsl(0, 0, 96%);
+    --clr-light-xl: hsl(0, 0, 100%);
+
+    --clr-dark-s: hsl(0, 0, 80%);
+    --clr-dark-m: hsl(0, 0, 70%);
+    --clr-dark-l: hsl(0, 0, 33%);
+    --clr-dark-xl: hsl(0, 0, 30%);
+    --clr-dark-3xl: hsl(0, 0, 16%);
+
+    --clr-primary-light: hsl(23, 93%, 88%);
+    --clr-dark-3xl: hsl(25, 69%, 82%);
+
+    /* Size variables*/
+    --fs-h2: 2.75rem;
+    --fs-h3: 2.1875rem;
+    --fs-h3-mobile: 1.5625rem;
+    --fs-h4: 1.25rem;
+    --fs-h5: 0.9375rem;
+    --fs-paragraph-l: 0.9375rem;
+    --fs-paragraph-s: 0.75rem;
+    --fs-paragraph-mob-menu: 2rem;
+    --fs-logo-title: 2rem;
+    --fs-logo-subtitle: 0.8125rem;
+
+}
+
+/* General styling */
+* {
+    padding: 0;
+    margin: 0;
+}
+
