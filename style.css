@@ -124,10 +124,12 @@ a {
     letter-spacing: 0.0625rem;
 }
 
-.hero-section {
+article {
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.hero-section {
     gap: 2.625rem;
 }
 
@@ -139,11 +141,22 @@ h1 {
     margin-bottom: 2.625rem;
 }
 
-.hero-text {
+h2 {
+    font-size: var(--fs-h3);
+    font-family: var(--ff-primary);
+    line-height: 130%;
+    letter-spacing: 0.0625rem;
+    color: var(--clr-dark-l);
+}
+
+p {
     font-size: var(--fs-paragraph-l);
     font-family: var(--ff-secondary);
-    color: var(--clr-dark-s);
     line-height: 160%;
+}
+
+.hero-text {
+    color: var(--clr-dark-s);
     margin-bottom: 2.625rem;
 }
 
@@ -163,4 +176,21 @@ h1 {
 .primary-btn:hover,
 .primary-btn:focus-visible {
     background-color: var(--clr-primary-light);
+}
+
+.about-pets {
+    gap: 7.5rem;
+    padding-inline: 10.9375rem;
+    padding-top: 5rem;
+    padding-bottom: 6.25rem;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+}
+
+.about-section > p {
+    color: var(--clr-dark-xl);
 }
