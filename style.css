@@ -310,3 +310,77 @@ p {
 .donations {
     background-color: var(--clr-light-l);
 }
+
+.donation-details {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+    padding-block: 5rem 6.25rem;
+    padding-inline: 8.875rem;
+    justify-content: center;
+}
+
+.donation-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.donation-section > span {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h5);
+    line-height: 110%;
+    letter-spacing: 0.0625rem;
+    color: var(--clr-dark-l);
+}
+
+.credit-card {
+    display: flex;
+    gap: 0.9375rem;
+    align-items: center;
+    background-color: var(--clr-primary-dark-3xl);
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.9375rem;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h4);
+    line-height: 115%;
+    letter-spacing: 0.0625rem;
+    width: fit-content;
+}
+
+.donation-section > p {
+    font-family: var(--ff-secondary-italic);
+    font-size: var(--fs-paragraph-s);
+    color: var(--clr-dark-m);
+    line-height: 150%;
+}
+
+footer {
+    background-image: url("images/footer-gradient-background.png");
+    background-size: cover;
+}
+
+.footer-section {
+    display: flex;
+    padding-top: 2.5rem;
+    gap: 10rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-column > h2 {
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    color: var(--clr-primary-dark-3xl);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h4);
+}
