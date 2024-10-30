@@ -214,13 +214,15 @@ p {
 .cards-container {
     display: flex;
     gap: 5.625rem;
+    max-width: 61.875rem;
+    overflow: hidden;
 }
 
 .pets-cards-carousel {
     display: flex;
     flex-direction: row;
     gap: 3.3125rem;
-    align-items: center;
+    align-items: center; 
 }
 
 .round-button {
@@ -230,10 +232,20 @@ p {
     height: 52px;
     border-color: var(--clr-primary-dark-3xl);
     align-items: center;
+    border-style: solid;
 }
 
-.left > svg{
+.prev-button > svg{
     transform: rotate(180deg);
+}
+
+.round-button:disabled {
+    border-color: var(--clr-dark-s);
+}
+
+.round-button:disabled > svg {
+    color: var(--clr-dark-s);
+    fill: currentColor;
 }
 
 .round-button:hover {
@@ -251,6 +263,10 @@ p {
     border-radius: 0.5rem;
 }
 
+.hidden {
+    display: none;
+}
+
 .pet-card > span {
     font-family: var(--ff-primary);
     font-size: var(--fs-h4);
@@ -262,6 +278,7 @@ p {
     background-color: transparent;
     border-color: var(--clr-primary-dark-3xl);
     border-radius: 100vmax;
+    border-style: solid;
     padding: 1.25em 3.75em;
     font-family: var(--ff-primary);
     font-size: 1.0625rem;
@@ -303,7 +320,7 @@ p {
 .help-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 7.5rem;
+    gap: 3.4375rem 7.5rem;
     justify-content: center;
 }
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" charset="utf-8" defer></script>
     <title>Cozy House</title>
 </head>
 <body>
@@ -17,10 +18,10 @@
                     </div>
                     <nav class="navigation">
                         <ul class="nav-list">
-                            <li class="nav-item"><a href="#">About the shelter</a></li>
-                            <li class="nav-item"><a href="#">Our pets</a></li>
-                            <li class="nav-item"><a href="#">Help the shelter</a></li>
-                            <li class="nav-item"><a href="#">Contacts</a></li>
+                            <li class="nav-item"><a href="#about-shelter">About the shelter</a></li>
+                            <li class="nav-item"><a href="#our-pets">Our pets</a></li>
+                            <li class="nav-item"><a href="#help-the-shelter">Help the shelter</a></li>
+                            <li class="nav-item"><a href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
                 </header>
@@ -34,7 +35,7 @@
                 </article>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about-shelter">
             <div class="container">
                 <article class="about-pets">
                     <img src="images/about-pets.png" alt="About pets">
@@ -46,34 +47,59 @@
                 </article>
             </div>
         </div>
-        <div class="pets">
+        <div class="pets" id="our-pets">
             <div class="container">
                 <article class="our-pets">
                     <h2>Our friends who<br> are looking for a house</h2>
                     <div class="pets-cards-carousel">
-                        <button class="round-button left">
+                        <button class="round-button prev-button">
                             <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929"/>
                             </svg>
                         </button>
                         <div class="cards-container">
-                            <div class="pet-card">
+                            <div class="pet-card visible">
                                 <img src="images/pets-katrine.png" alt="Katrine" class="pet-image">
                                 <span>Katrine</span>
                                 <button class="pet-card-button">Learn more</button>
                             </div>
-                            <div class="pet-card">
+                            <div class="pet-card visible">
                                 <img src="images/pets-jennifer.png" alt="Jennifer" class="pet-image">
                                 <span>Jennifer</span>
                                 <button class="pet-card-button">Learn more</button>
                             </div>
-                            <div class="pet-card">
+                            <div class="pet-card visible">
                                 <img src="images/pets-woody.png" alt="Woody" class="pet-image">
                                 <span>Woody</span>
                                 <button class="pet-card-button">Learn more</button>
                             </div>
+                            <div class="pet-card visible">
+                                <img src="images/pets-sophia.png" alt="Sophia" class="pet-image">
+                                <span>Sophia</span>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card visible">
+                                <img src="images/pets-timmy.png" alt="Timmy" class="pet-image">
+                                <span>Timmy</span>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card visible">
+                                <img src="images/pets-charly.png" alt="Charly" class="pet-image">
+                                <span>Charly</span>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card visible">
+                                <img src="images/pets-scarlet.png" alt="Scarlet" class="pet-image">
+                                <span>Scarlet</span>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card visible">
+                                <img src="images/pets-freddie.png" alt="Freddie" class="pet-image">
+                                <span>Freddie</span>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
                         </div>
-                        <button class="round-button right">
+                        <button class="round-button next-button">
                             <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929"/>
                             </svg>
@@ -83,7 +109,7 @@
                 </article>
             </div>
         </div>
-        <div class="help">
+        <div class="help" id="help-the-shelter">
             <div class="container">
                 <div class="help-section">
                     <h2>How you can help our shelter</h2>
@@ -147,7 +173,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer id="contacts">
         <div class="container">
             <div class="footer-section">
                 <div class="footer-column contacts">
